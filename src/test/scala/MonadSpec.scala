@@ -62,6 +62,6 @@ class MonadSpec extends FunSuite with Matchers {
             }
         }
 
-        optionTMonad[List].pure(42) should be(List(Option(42)))
+        optionTMonad[List].pure(42) should be(OptionT(List(Option(42))))
     }
 }
